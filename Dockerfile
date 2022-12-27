@@ -6,4 +6,4 @@ COPY . .
 
 RUN apt-get update && apt-get upgrade -y
 #RUN pip3 install -r requirements.txt
-RUN pip install pillow mutagen text2digits
+RUN pip install pillow mutagen text2digits lxml requests
