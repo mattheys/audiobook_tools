@@ -1,6 +1,6 @@
 FROM python:bullseye
 
-COPY * /app
+COPY * /app/
 WORKDIR /app
 
 RUN apt-get update && apt-get upgrade -y
