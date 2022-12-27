@@ -1,4 +1,7 @@
 FROM python:bullseye
 
-RUN apt-get update && apt-get upgrade -f
-RUN pip install Pillow mutagen text2digits
+COPY * /app
+WORKDIR /app
+
+RUN apt-get update && apt-get upgrade -y
+RUN pip3 install -r requirements.txt
